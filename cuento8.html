@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -81,3 +82,88 @@ Y comprendió que su cuerpo era su casa, y solo ella tenía la llave.
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuento</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Contenedor general */
+        .cuento-container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Título del cuento */
+        #tituloCuento {
+            font-size: 36px;
+            color: #e66bb6;      /* Rosa pastel fuerte */
+            margin-bottom: 30px;
+            text-align: center;  /* Centrado */
+            font-weight: bold;
+        }
+
+        /* Texto del cuento */
+        .cuento-texto {
+            text-align: justify;     /* JUSTIFICADO */
+            line-height: 1.8;
+            font-size: 20px;
+            white-space: pre-line;    /* Respeta saltos de línea */
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="shield">🛡️</span>
+            <h2>Pequeños Valientes</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cuentos">Biblioteca de cuentos</a>
+        </nav>
+    </header>
+
+    <section class="cuento-container">
+        <h1 id="tituloCuento">Brona y la Puerta del “Esto No Me Gusta”</h1>
+
+        <p class="cuento-texto">
+            En el Bosque de las Estrellas existía una puerta mágica que todos los niños tenían dentro:
+la Puerta del “Esto No Me Gusta”.
+Solo se abría cuando algo o alguien hacía sentir raro el corazón.
+Un día, mientras jugaban a las escondidas, un visitante nuevo del bosque quiso enseñarle a Brona un “juego secreto”.
+Le dijo que nadie debía verlo, y extendió la mano hacia ella.
+En ese instante, el corazón de Brona palpitó con fuerza y la puerta interior se encendió con un resplandor rojo.
+La estrella apareció, seria pero suave.
+—Esa puerta te está protegiendo, Brona, si algo te hace sentir mal, es mejor evitarlo si puedes.
+Brona retrocedió y dijo con voz clara:
+—No quiero jugar eso. Voy a decírselo a mi abuela.
+El visitante frunció el ceño y se fue sin decir más.
+Brona corrió a casa y contó todo.
+La abuela la abrazó con ternura.
+—Hiciste lo correcto, mi estrella. Cuando algo no te gusta o te asusta, siempre puedes hablar conmigo. Nadie tiene derecho a hacerte sentir incómoda.
+Esa noche, mientras el bosque dormía, Brona soñó con la puerta iluminada, firme como una promesa.
+Y comprendió que su cuerpo era su casa, y solo ella tenía la llave.
+        </p>
+    </section>
+
+    <script>
+        // Lee el título desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const titulo = params.get("titulo");
+        document.getElementById("tituloCuento").innerText = titulo;
+    </script>
+
+</body>
+</html>
+>>>>>>> f2faaf614394eab61d984a850d142102d646f6e2
