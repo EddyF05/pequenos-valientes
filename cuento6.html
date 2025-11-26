@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuento</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Contenedor general */
+        .cuento-container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Título del cuento */
+        #tituloCuento {
+            font-size: 36px;
+            color: #e66bb6;      /* Rosa pastel fuerte */
+            margin-bottom: 30px;
+            text-align: center;  /* Centrado */
+            font-weight: bold;
+        }
+
+        /* Texto del cuento */
+        .cuento-texto {
+            text-align: justify;     /* JUSTIFICADO */
+            line-height: 1.8;
+            font-size: 20px;
+            white-space: pre-line;    /* Respeta saltos de línea */
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="shield">🛡️</span>
+            <h2>Pequeños Valientes</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cuentos">Biblioteca de cuentos</a>
+        </nav>
+    </header>
+
+    <section class="cuento-container">
+        <h1 id="tituloCuento">Brona y el Árbol de los Sí y los No</h1>
+
+        <p class="cuento-texto">
+            Una mañana, Brona y su estrella encontraron un árbol muy curioso.
+Tenía hojas verdes y hojas rojas.
+En su tronco, una inscripción decía:
+“Este es el Árbol de los Sí y los No. Escucha tu corazón y sabrás qué rama brilla para ti.”
+Brona tocó una hoja verde, la cual se hizo polvito de hojas, pero con sus rastros rotos formo una oracion:
+—Sí a jugar con mis amigos en el bosque.
+Luego de eso, tomo una hoja roja, nuevamente haciendose polvito y formando una oracion:
+—No a los juegos que duelen, como los tirones del cabello.
+La estrella la observaba feliz y relajada.
+—Tu corazón sabe qué es un sí y qué es un no. Solo hay que escucharlo con atención.
+Por la tarde, un zorro amistoso le ofreció un dulce nuevo, el problema es que era de sabor melon, fruta la cual a ella no le gustaba.
+Brona dudó. La hoja roja del árbol brilló en su mente, como si no se hubiera hecho polvito en sus manos antes.
+—No, gracias. No me gusta ese sabor —dijo sin dudar, en respuesta a seguir lo que su corazoncito decia.
+El zorro sonrió, comprendiendo.
+Desde entonces, Brona enseñó a los demás a tener su propio Árbol de los Sí y los No dentro del pecho,
+porque aprender a decir no también es cuidar de uno mismo.
+        </p>
+    </section>
+
+    <script>
+        // Lee el título desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const titulo = params.get("titulo");
+        document.getElementById("tituloCuento").innerText = titulo;
+    </script>
+
+</body>
+</html>

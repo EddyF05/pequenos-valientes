@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuento</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Contenedor general */
+        .cuento-container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Título del cuento */
+        #tituloCuento {
+            font-size: 36px;
+            color: #e66bb6;      /* Rosa pastel fuerte */
+            margin-bottom: 30px;
+            text-align: center;  /* Centrado */
+            font-weight: bold;
+        }
+
+        /* Texto del cuento */
+        .cuento-texto {
+            text-align: justify;     /* JUSTIFICADO */
+            line-height: 1.8;
+            font-size: 20px;
+            white-space: pre-line;    /* Respeta saltos de línea */
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="shield">🛡️</span>
+            <h2>Pequeños Valientes</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cuentos">Biblioteca de cuentos</a>
+        </nav>
+    </header>
+
+    <section class="cuento-container">
+        <h1 id="tituloCuento">Brona y la Burbuja de su Espacio</h1>
+
+        <p class="cuento-texto">
+            En el Bosque de las Estrellas, cada mañana el rocío formaba pequeñas burbujas que flotaban en el aire.
+Brona las perseguía riendo, hasta que una burbuja muy brillante se posó sobre su corazón.
+La estrella apareció revoloteando y le dijo:
+—Esa es tu burbuja de espacio, Brona. Todos tenemos una, invisible pero muy real.
+Protege lo que está dentro: tus emociones, tu cuerpo y tus decisiones, asi como lo que consideras que esta bien y esta mal.
+Brona se quedó pensativa ante la premisa de tener algo tan importante guardado, mas debido a que ella no sabia de su existencia, a lo cual, lo fue pensando un poco en lo que iba de camino a la escuela.
+Más tarde, en la escuela, jugaban a las estatuas luminosas. Todos se reían, pero uno de los conejitos la empujó sin querer y la abrazó con fuerza a un modo de disculpa por su error.
+Brona no se sintió cómoda; su burbuja se estremeció y su luz titiló.
+—¡Alto! —dijo con voz suave pero firme—. No me gusta cuando me empujan, tampoco los abrazos tan fuertes.
+El conejito se detuvo sorprendido.
+—Perdón, Brona. No sabía que te incomodaba eso, no era mi intencion.
+La estrella siempre vigilante sonrió desde arriba en el cielo estrellado, con su mirada fija en su pequeña Brona.
+—Cuidar tu burbuja no es ser mala, es ser valiente. Y respetar la de otros sin lastimarlos es ser amable.
+Desde entonces, en el Bosque de las Estrellas, todos aprendieron a jugar preguntando primero:
+“¿Puedo darte un abrazo?”
+Y las burbujas de todos brillaron más fuertes que nunca.
+        </p>
+    </section>
+
+    <script>
+        // Lee el título desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const titulo = params.get("titulo");
+        document.getElementById("tituloCuento").innerText = titulo;
+    </script>
+
+</body>
+</html>

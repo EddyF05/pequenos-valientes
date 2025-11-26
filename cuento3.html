@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuento</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Contenedor general */
+        .cuento-container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Título del cuento */
+        #tituloCuento {
+            font-size: 36px;
+            color: #e66bb6;      /* Rosa pastel fuerte */
+            margin-bottom: 30px;
+            text-align: center;  /* Centrado */
+            font-weight: bold;
+        }
+
+        /* Texto del cuento */
+        .cuento-texto {
+            text-align: justify;     /* JUSTIFICADO */
+            line-height: 1.8;
+            font-size: 20px;
+            white-space: pre-line;    /* Respeta saltos de línea */
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="shield">🛡️</span>
+            <h2>Pequeños Valientes</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cuentos">Biblioteca de cuentos</a>
+        </nav>
+    </header>
+
+    <section class="cuento-container">
+        <h1 id="tituloCuento">Brona y la Promesa del Bosque Seguro</h1>
+
+        <p class="cuento-texto">
+            Era una mañana tranquila en el Bosque de las Luces, y el aire olía a hojas nuevas. Brona jugaba con su estrella, que bailaba a su alrededor dejando destellos en el aire.
+Mientras buscaba flores, escuchó un sollozo muy bajito detrás de un arbusto. Se acercó con cuidado y encontró a tres conejitos abrazados, con las orejas caídas.
+—¿Por qué lloran? —preguntó Brona, inclinándose suavemente.
+—Es que... —balbuceó el más pequeño—, el zorro Rojo nos pidió guardar un secreto. Dijo que no debíamos contárselo a nadie, ni siquiera a mamá coneja… pero nos sentimos raros por dentro.
+Brona frunció el ceño. Recordó algo que su abuela siempre decía mientras le peinaba el cabello:
+“No todos los secretos son iguales, Brona. Los que te hacen sonreír cuidan tu luz. Pero los que te apagan el corazón deben contarse, para que vuelvan a brillar.”
+La pequeña estrella que flotaba sobre su hombro titiló con fuerza, como si aprobara esas palabras.
+—Entonces no es un buen secreto —dijo Brona con seguridad y decisión—. Cuando algo duele, hay que hablarlo. Vengan conmigo.
+Caminaron juntos hasta el viejo Roble del Consejo, donde vivía el Guardián del Bosque, un búho de ojos dorados llamado Lúmen. Él escuchó atentamente, sin interrumpir. Cuando los conejitos terminaron de hablar, el búho los miró con ternura.
+—Hablar fue muy valiente —dijo—. Los secretos que apagan la luz del corazón no deben guardarse jamás. Siempre hay adultos que pueden escuchar, cuidar y ayudar.
+El Guardián levantó una de sus plumas y, con un suave resplandor, dibujó en el aire una promesa que quedó flotando sobre ellos:
+“En este bosque, ningún corazón se quedará solo con un secreto que duela.”
+Los conejitos respiraron aliviados. Brona los abrazó, sintiendo su propio corazón brillar con más fuerza que nunca.
+Cuando regresó a casa, su abuela la esperaba junto al fuego. Brona le contó todo.
+—Eso es lo que llamo la promesa del bosque seguro —le dijo la abuela con una sonrisa—: cuidar tu luz y la de los demás contando la verdad, hoy ayudaste a otros a cuidar su luz. Ese es el secreto más bonito que puede guardarse.
+Brona sonrió medio dormida. El bosque entero parecía brillar con una promesa silenciosa:
+En el Bosque de las Estrellas, nadie guardaría más secretos que pesaran en el corazón.
+        </p>
+    </section>
+
+    <script>
+        // Lee el título desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const titulo = params.get("titulo");
+        document.getElementById("tituloCuento").innerText = titulo;
+    </script>
+
+</body>
+</html>
