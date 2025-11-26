@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuento</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Contenedor general */
+        .cuento-container {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Título del cuento */
+        #tituloCuento {
+            font-size: 36px;
+            color: #e66bb6;      /* Rosa pastel fuerte */
+            margin-bottom: 30px;
+            text-align: center;  /* Centrado */
+            font-weight: bold;
+        }
+
+        /* Texto del cuento */
+        .cuento-texto {
+            text-align: justify;     /* JUSTIFICADO */
+            line-height: 1.8;
+            font-size: 20px;
+            white-space: pre-line;    /* Respeta saltos de línea */
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="shield">🛡️</span>
+            <h2>Pequeños Valientes</h2>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#cuentos">Biblioteca de cuentos</a>
+        </nav>
+    </header>
+
+    <section class="cuento-container">
+        <h1 id="tituloCuento">Brona y el Secreto del Corazón Luminoso</h1>
+
+        <p class="cuento-texto">
+            En el Bosque de las Estrellas, vivía Brona, una niña con un corazón que brillaba como una linterna, que emanaba calidez, confianza y felicidad.
+Cada vez que se sentía feliz o tranquila, su corazón iluminaba el camino de colores suaves y cálidos.
+Un día, mientras jugaba con su amigo Mara, este quiso hacer un juego nuevo.
+“No se lo digamos a nadie”, dijo él sonriendo.
+Brona no entendió por qué tenía que ser un secreto. Su corazón, que siempre brillaba con fuerza, comenzó a titilar y a sentirse pesado, como si una nube lo cubriera, o estuviera cargando con una mochila pesada repentinamente.
+“¿Por qué mi corazón se siente raro?”, pensó Brona, se quedó callada un momento, pero la incomodidad no desapareció.
+“¿Por qué te vez tan seria? Solo es un juego, solo son bromas a los otros” Mencionaria Mara con un tono emocionado, y notándose como de sus bolsillos, sacaria chicles, jeringas falsas, y animalitos como arañas, gusanos de plástico, con pintas “reales.
+
+“No me gusta asustar a mis amigos” Diria con titubeo e inseguridad Mara, en un tono de voz suave pero intranquilo, mostrando rechazo a la idea con un gesto que denotaba tristeza, a la par en la cual la luz de su corazón amado, empezaba a iluminar de forma mas tenue ante la idea de molestar a gente conocida y no conocida sin motivo.
+
+Mara se vio sorprendido ante ello, mas hizo un chasquido de lengua, mientras alzaba una mano y la descendia a la nada, respondiendo “oh pero que aburrida eres, no vamos a lastimar a alguien, solo es hacerlos..” Deteniendose un momento, debido a que no encontró las palabras de primeras, para luego chocar ambas manos en un suave aplauso y continuar  “¡gritar! Este bosque es aburrido, hay que hacer algo para hacerlo divertido”
+
+Brona dio un paso hacia atrás, su corazón nuevamente mostrando titileos suaves, ahora, moviendo los brazos hacia los lados, asi como su cabeza de forma frenética diciendo no, a su vez que respondia “¡No quiero! Mi abuelita siempre me dice que, trate a los demás como quiero que me traten”
+
+Mara continuo tratando de persuadir a Brona por unos momentos mas, mas ella no siguió aquel juego, dándose cuenta de ello, Mara simplemente se rindió, y fue a hacer dichas maldades solo, sin antes mencionarle a Brona que creía que ella no era una gallina, palabras que hizo que el corazón iluminado de Brona lleno de colores y luces, ahora solo iluminase con una luz gris.
+En casa, su abuela notó que Brona al llegar estaba seria, con una mirada triste, asi como con una luz grisasea, extraña ante la llena de colores que solia tener.
+“¿Pasó algo en el bosque, mi pequeña estrella?”
+Brona dio un leve saltito de la impresión al no esperar la pregunta, y un claro signo de duda se hizo presente en su rostro, pero su abuela se le adelanto, dando un paso al frente, colocando una mano en el hombro de su querida nieta, asi como incandose para estar a la misma altura que ella, diciendo
+
+“Tu corazón te avisa cuando algo no está bien. Si brilla menos, háblalo, estoy aquí para acompañarte mi querida nieta”
+Brona respiró hondo y contó lo que había pasado, su discusión e insistencia con Mara, asi como lo extrañamente mal que se sintió al hecho de escuchar dichas ideas.
+La abuela la abrazó y su corazón volvió a brillar suave y cálido.
+—Hiciste bien, Brona —dijo la abuela, mientras coloco su mano en la cabeza de Brona, empezando a sobarle de forma suave—. Los secretos que apagan la luz del corazón nunca deben guardarse, mañana iremos con Mara, y le diremos juntas lo que te hizo sentir, y el si podría evitar hacerlo de nuevo, ¿qué te parece?
+
+Brona sonrio de oreja a oreja, asi como la luz de su corazón, intensa y calida retomo fuerza, simplemente gritando un si hacia su abuela, con una expresión mucho mas tranquila y feliz, a lo que su abuela simplemente sonrio y rio de forma suave, diciendole “Ahí esta mi estrellita fugaz de siempre”
+Desde ese día, Brona enseñó a sus amigos que las emociones son luces que ayudan a cuidarnos, asi como nuestro corazón la guía que debemos seguir para evitar averiar nuestra luz.
+Si una luz se apaga, hay que buscar a alguien que nos ayude a encenderla otra vez.
+        </p>
+    </section>
+
+    <script>
+        // Lee el título desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const titulo = params.get("titulo");
+        document.getElementById("tituloCuento").innerText = titulo;
+    </script>
+
+</body>
+</html>
